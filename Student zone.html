@@ -1,0 +1,287 @@
+<html>
+<head><title>Student Zone</title>
+<link rel="icon" type="text/icon" href="Images/LOGO.png">    
+<style>
+#links > a { text-decoration: none;}
+#facebook { width: 53px;
+    height: 50px;
+    background-color: white;
+    border: 1px #0077B5 solid;
+    left: 0px;
+    transition: 0.5s;
+    z-index: +100;
+    margin-bottom: 2px;
+    display: block;
+
+}
+#twitter { width: 53px;
+border: 1px #38A1F3 solid;
+    height: 50px;
+    background-color:  white;
+      position: sticky;
+    left: 0px;
+    transition: 0.5s;
+    z-index: +100;
+    margin-bottom: 1px;
+    display: block;
+}
+#insta { width: 53px;
+border: 1px #d6249f solid;
+    height: 50px;
+    background-color:  white;
+    position: sticky;
+    left: 0px;
+    transition: 0.5s;
+    z-index: +100;
+    margin-bottom: 1px;
+    display: block;
+}
+#google-plus { width: 53px;
+border: 1px #d34836 solid;
+    height: 50px;
+    background-color:  white;
+    position: sticky;
+    left: 0px;
+    transition: 0.5s;
+    z-index: +100;
+    margin-bottom: 1px;
+    display: block;
+}
+#youtube { width: 53px;
+border: 1px #ED3833 solid;
+    height: 50px;
+    background-color: white;
+    position: sticky;
+    left: 0px;
+    transition: 0.5s;
+    z-index: +100;
+    margin-bottom: 1px;
+    display: block;
+}
+#twitter:hover {  background: #38A1F3;cursor: pointer;
+}
+#insta:hover { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);cursor: pointer;
+}
+#google-plus:hover { background: #d34836;cursor: pointer;
+}
+#facebook:hover { background: #0077B5;cursor: pointer;
+}
+#youtube:hover { background: #ED3833;cursor: pointer;
+}
+#facebook:before {
+   font-family: ico;
+    content: "\f09a"; 
+    font-size: 30px;
+    color: black;
+    margin-left: 18px;
+    position: relative;
+    top: 8px;
+}
+#facebook:hover:before {
+   font-family: ico;
+    content: "\f09a"; 
+    font-size: 30px;
+    color:  white;
+    margin-left: 18px;
+    position: relative;
+    top: 8px;
+}
+#twitter:before {
+   font-family: ico;
+    content: "\f099"; 
+    font-size: 33px;
+    color: black;
+    margin-left: 13px;
+    position: relative;
+    top: 8px;
+}
+#twitter:hover:before {
+   font-family: ico;
+    content: "\f099"; 
+    font-size: 33px;
+    color: white;
+    margin-left: 13px;
+    position: relative;
+    top: 8px;
+}
+#google-plus:before {
+   font-family: ico;
+    content: "\f0d5"; 
+    font-size: 24px;
+    color: black;
+    margin-left: 13px;
+    position: relative;
+    top: 10px;
+}
+#google-plus:hover:before {
+   font-family: ico;
+    content: "\f0d5"; 
+    font-size: 24px;
+    color: white;
+    margin-left: 13px;
+    position: relative;
+    top: 10px;
+}
+#insta:before {
+   font-family: ico;
+    content: "\f16d"; 
+    font-size: 33px;
+    color: black;
+    margin-left: 13px;
+    position: relative;
+    top: 8px;
+}
+#insta:hover:before {
+   font-family: ico;
+    content: "\f16d"; 
+    font-size: 33px;
+   color: white;
+    margin-left: 13px;
+    position: relative;
+    top: 8px;
+}
+#youtube:before {
+   font-family: ico;
+    content: "\f167"; 
+    font-size: 33px;
+    color: black;
+    margin-left: 13px;
+    position: relative;
+    top: 8px;
+}
+#youtube:hover:before {
+   font-family: ico;
+    content: "\f167"; 
+    font-size: 33px;
+    color: white;
+    margin-left: 13px;
+    position: relative;
+    top: 8px;
+}
+#links { position:fixed;
+    top: 50%;
+    transform: translate(0,-50%);
+    left: 0px;
+    background: none;
+    padding-right: 1px;
+    z-index: +10;
+}
+@font-face {
+  font-family: ico;
+  src: url(Font/fontawesome-webfont.eot);
+  src: url(font/fontawesome-webfont.eot), url(font/fontawesome-webfont.woff2), url(font/fontawesome-webfont.woff), url(fonts/fontawesome-webfont.ttf), url(font/fontawesome-webfont.svg);
+}
+@font-face {
+  font-family: Alex;
+  src: url(Font/Alex.ttf);
+  }
+.ico {font-style: normal;
+  display: inline-block;
+  font-family: ico;
+  font-size: inherit;
+  color: white;
+}
+form > input { height: 40px;
+    margin-bottom: 2px;
+    width: 200px;
+} 
+form > input[type="reset"] { height: 40px; 
+    width: 70px;
+}  
+form > input[type="button"] { height: 40px; 
+    width: 130px;
+}  
+form > select { height: 40px; 
+    margin-bottom: 2px;
+    width: 200px;} 
+</style>
+</head>
+<body leftmargin="0px" topmargin="0px"alink="red">
+<div id="links">
+<a href="https://www.instagram.com/"><div id="insta"></div></a>
+<a href="https://developers.google.com/web/showcase/2015/googleplus"><div id="google-plus"></div></a>
+<a href="https://www.youtube.com/channel/UCtxbaDP8yTx7VXi7CZ-tVHA"><div id="youtube"></div></a>
+<a href="https://twitter.com/"><div id="twitter"></div></a>
+<a href="https://www.facebook.com/computerinstituteraebareli/"><div id="facebook"></div></a>
+</div>
+
+<table width="100%"  class="main" border="0px" cellspacing="0px" id="top"> 
+<tr>
+<td width="24%" ><img src="images/logo.png" align="left" height="130px"></td>
+<td colspan="2" width="52%" align="left">
+<font size="7" style="font-family:Alex;">
+GURUKUL COMPUTER INSTITUTE<br>
+</font>
+<font face="Calibri" size="4">   
+CERTIFIED INSTITUTE BY ISO 9001:2015 
+</font>
+</td>    
+<td width="24%"><img src="images/nielit.png"align="right"height="130px"></td>
+</tr>
+<br>
+<tr>
+    <td colspan="4">
+        <br>
+        
+<table frame="void" border="1px" align="center" >
+    <tr height="50px">
+        <td width="100px" align="center" bgcolor="black"><a href="Index.html"><font size="2" color="white">HOME</font></a></td>
+        <td width="100px" align="center" bgcolor="black"><a href="Director's_Desk.html"><font size="2" color="white">DIRECTOR'S DESK</font></a></td>
+        <td width="100px" align="center" bgcolor="black"><a href="Courses.html" ><font size="2" color="white">COURSES</font></a></td>
+        <td width="100px" align="center" bgcolor="black"><a href="Index.html#gallery"><font size="2" color="white">GALLERY</font></a></td>
+	<td width="100px" align="center" bgcolor="black"><a href="apply online.html" ><font size="2" color="white">APPLY ONLINE</font></a></td>
+        <td width="100px" align="center" bgcolor="black"><a href="Student%20zone.html" ><font size="2" color="white">STUDENTS ZONE</font></a></td>
+        <td width="100px" align="center" bgcolor="black"><a href="faq.html"><font size="2" color="white">FAQS</font></a></td>
+        <td width="100px" align="center" bgcolor="black"><a href="about gurukul.html" ><font size="2" color="white">ABOUT US</a></font></a></td>
+        <td width="100px" align="center" bgcolor="black"><a href="Index.html#contact_us"><font size="2" color="white">CONTACT US</font></a></td>                
+     </tr>
+</table> 
+<br>
+</td>
+</tr>    
+<tr>
+<td colspan="4"><br><hr></td>
+<tr>
+<td colspan="4"><br><center>
+<table border="3"align="center"cellpadding="3%">
+<tr><td colspan="3"><h1>Importent Notice:-</h1><hr></td></tr>
+<tr><td colspan="3"><H3><Font color="Blue">
+<marquee behaviour="alternate"><a href="apply online.html">Last Date of CCC Registration is 05-nov-2020</a></marquee></font></h3>
+<tr><td width="30%"><h3><b>SYLLABUS</b><br></h3>  
+<ul type="square">
+<a href="li.html"><li>CCC</a>
+<li>DCA
+<li>Tally
+<li>ADCA
+<li>'O' level
+<li>'A' level
+<li>DTP
+<li>BCA</ul></td>
+<td width="30%"><h3></b>DOWNLOAD</b></h3>
+<ul type="Bullet">
+<li>Admit card
+<li>Result
+<li>Certificate
+<li>Verification</ul><BR><br><br>&#160&#160&#160</td>
+<td width="30%"><h3><b>Courses</b></h3>
+<ul type="disk">
+<li>BCC
+<li>CCC
+<li>DTP
+<li>DCA
+<li>Tally
+<li>ADCA
+<li>'o'level
+<li>PGDCA&#160&#160&#160&#160&#160&#160&#160</td></tr>
+<tr>
+<td COLSPAN="3"><center><h3><b><u>ForCertificateVarification</b></u></h3>
+<h3><b>Student Login</b></h3>
+User name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="Text box"size="10"><br>
+Password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password"size="10"name="code"><br>
+Registration no:<input type="Text box"size="10"><br>
+D.O.B : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="Text box"size="10"><br><br>
+<input type="Button"value="Verify">&#160&#160&#160
+<input type="Button"value="Cancel"><br></center></td></tr>
+</td></tr></table><br><br>
+</body>
+</html>

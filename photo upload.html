@@ -1,0 +1,324 @@
+<html>
+<head><title>Photo upload & Fee payment</title>
+<link rel="icon" type="text/icon" href="Images/LOGO.png">    
+<style>
+#links > a { text-decoration: none;}
+#facebook { width: 53px;
+    height: 50px;
+    background-color: white;
+    border: 1px #0077B5 solid;
+    left: 0px;
+    transition: 0.5s;
+    z-index: +100;
+    margin-bottom: 2px;
+    display: block;
+
+}
+#twitter { width: 53px;
+border: 1px #38A1F3 solid;
+    height: 50px;
+    background-color:  white;
+      position: sticky;
+    left: 0px;
+    transition: 0.5s;
+    z-index: +100;
+    margin-bottom: 1px;
+    display: block;
+}
+#insta { width: 53px;
+border: 1px #d6249f solid;
+    height: 50px;
+    background-color:  white;
+    position: sticky;
+    left: 0px;
+    transition: 0.5s;
+    z-index: +100;
+    margin-bottom: 1px;
+    display: block;
+}
+#google-plus { width: 53px;
+border: 1px #d34836 solid;
+    height: 50px;
+    background-color:  white;
+    position: sticky;
+    left: 0px;
+    transition: 0.5s;
+    z-index: +100;
+    margin-bottom: 1px;
+    display: block;
+}
+#youtube { width: 53px;
+border: 1px #ED3833 solid;
+    height: 50px;
+    background-color: white;
+    position: sticky;
+    left: 0px;
+    transition: 0.5s;
+    z-index: +100;
+    margin-bottom: 1px;
+    display: block;
+}
+#twitter:hover {  background: #38A1F3;cursor: pointer;
+}
+#insta:hover { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);cursor: pointer;
+}
+#google-plus:hover { background: #d34836;cursor: pointer;
+}
+#facebook:hover { background: #0077B5;cursor: pointer;
+}
+#youtube:hover { background: #ED3833;cursor: pointer;
+}
+#facebook:before {
+   font-family: ico;
+    content: "\f09a"; 
+    font-size: 30px;
+    color: black;
+    margin-left: 18px;
+    position: relative;
+    top: 8px;
+}
+#facebook:hover:before {
+   font-family: ico;
+    content: "\f09a"; 
+    font-size: 30px;
+    color:  white;
+    margin-left: 18px;
+    position: relative;
+    top: 8px;
+}
+#twitter:before {
+   font-family: ico;
+    content: "\f099"; 
+    font-size: 33px;
+    color: black;
+    margin-left: 13px;
+    position: relative;
+    top: 8px;
+}
+#twitter:hover:before {
+   font-family: ico;
+    content: "\f099"; 
+    font-size: 33px;
+    color: white;
+    margin-left: 13px;
+    position: relative;
+    top: 8px;
+}
+#google-plus:before {
+   font-family: ico;
+    content: "\f0d5"; 
+    font-size: 24px;
+    color: black;
+    margin-left: 13px;
+    position: relative;
+    top: 10px;
+}
+#google-plus:hover:before {
+   font-family: ico;
+    content: "\f0d5"; 
+    font-size: 24px;
+    color: white;
+    margin-left: 13px;
+    position: relative;
+    top: 10px;
+}
+#insta:before {
+   font-family: ico;
+    content: "\f16d"; 
+    font-size: 33px;
+    color: black;
+    margin-left: 13px;
+    position: relative;
+    top: 8px;
+}
+#insta:hover:before {
+   font-family: ico;
+    content: "\f16d"; 
+    font-size: 33px;
+   color: white;
+    margin-left: 13px;
+    position: relative;
+    top: 8px;
+}
+#youtube:before {
+   font-family: ico;
+    content: "\f167"; 
+    font-size: 33px;
+    color: black;
+    margin-left: 13px;
+    position: relative;
+    top: 8px;
+}
+#youtube:hover:before {
+   font-family: ico;
+    content: "\f167"; 
+    font-size: 33px;
+    color: white;
+    margin-left: 13px;
+    position: relative;
+    top: 8px;
+}
+#links { position:fixed;
+    top: 50%;
+    transform: translate(0,-50%);
+    left: 0px;
+    background: none;
+    padding-right: 1px;
+    z-index: +10;
+}
+@font-face {
+  font-family: ico;
+  src: url(Font/fontawesome-webfont.eot);
+  src: url(font/fontawesome-webfont.eot), url(font/fontawesome-webfont.woff2), url(font/fontawesome-webfont.woff), url(fonts/fontawesome-webfont.ttf), url(font/fontawesome-webfont.svg);
+}
+@font-face {
+  font-family: Alex;
+  src: url(Font/Alex.ttf);
+  }
+.ico {font-style: normal;
+  display: inline-block;
+  font-family: ico;
+  font-size: inherit;
+  color: white;
+}
+form > input { height: 40px;
+    margin-bottom: 2px;
+    width: 200px;
+} 
+form > input[type="reset"] { height: 40px; 
+    width: 70px;
+}  
+form > input[type="button"] { height: 40px; 
+    width: 130px;
+}  
+form > select { height: 40px; 
+    margin-bottom: 2px;
+    width: 200px;} 
+</style>
+</head>
+<body leftmargin="0px" topmargin="0px"alink="red">
+<div id="links">
+<a href="https://www.instagram.com/"><div id="insta"></div></a>
+<a href="https://developers.google.com/web/showcase/2015/googleplus"><div id="google-plus"></div></a>
+<a href="https://www.youtube.com/channel/UCtxbaDP8yTx7VXi7CZ-tVHA"><div id="youtube"></div></a>
+<a href="https://twitter.com/"><div id="twitter"></div></a>
+<a href="https://www.facebook.com/computerinstituteraebareli/"><div id="facebook"></div></a>
+</div>
+
+<table width="100%"  class="main" border="0px" cellspacing="0px" id="top"> 
+<tr>
+<td width="24%" ><img src="images/logo.png" align="left" height="130px"></td>
+<td colspan="2" width="52%" align="left">
+<font size="7" style="font-family:Alex;">
+GURUKUL COMPUTER INSTITUTE<br>
+</font>
+<font face="Calibri" size="4">   
+CERTIFIED INSTITUTE BY ISO 9001:2015 
+</font>
+</td>    
+<td width="24%"><img src="images/nielit.png"align="right"height="130px"></td>
+</tr>
+<br>
+<tr>
+    <td colspan="4">
+        <br>
+        
+<table frame="void" border="1px" align="center" >
+    <tr height="50px">
+        <td width="100px" align="center" bgcolor="black"><a href="Index.html"><font size="2" color="white">HOME</font></a></td>
+        <td width="100px" align="center" bgcolor="black"><a href="Director's_Desk.html"><font size="2" color="white">DIRECTOR'S DESK</font></a></td>
+        <td width="100px" align="center" bgcolor="black"><a href="Courses.html" ><font size="2" color="white">COURSES</font></a></td>
+        <td width="100px" align="center" bgcolor="black"><a href="Index.html#gallery"><font size="2" color="white">GALLERY</font></a></td>
+	<td width="100px" align="center" bgcolor="black"><a href="apply online.html" ><font size="2" color="white">APPLY ONLINE</font></a></td>
+        <td width="100px" align="center" bgcolor="black"><a href="Student%20zone.html" ><font size="2" color="white">STUDENTS ZONE</font></a></td>
+        <td width="100px" align="center" bgcolor="black"><a href="faq.html"><font size="2" color="white">FAQS</font></a></td>
+        <td width="100px" align="center" bgcolor="black"><a href="about gurukul.html" ><font size="2" color="white">ABOUT US</a></font></a></td>
+        <td width="100px" align="center" bgcolor="black"><a href="Index.html#contact_us"><font size="2" color="white">CONTACT US</font></a></td>                
+     </tr>
+</table> 
+<br>
+</td>
+</tr>    
+<tr>
+<td colspan="4"><br><hr></td>
+<tr>
+<td colspan="4"><br><center>
+<table border="2"align="center" style="width:400px;">
+<tr><td width="30px"><center><h2><b><u>Please Upload Photograph & Signature</h2></b></u><br>
+Upload photo:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="file"placeholder="browse"><br><br>
+Upload signature:<input type="file"placeholder="browse"><br><center>
+<tr><td><h2><u>Fee payment</u></h2>
+Fee Amount:<input type="number box"><br><BR>
+Payment mode:<select>
+<option>Select
+<option>Paytm
+<option>Debit card
+<option>Online<select><br><BR>
+Regisration no:<input type="Text box"name="Registration"><br><BR>
+Transaction Date:<select>
+<option>Day
+<option>1
+<option>2
+<option>3
+<option>4
+<option>5
+<option>6
+<option>7
+<option>8
+<option>9
+<option>10
+<option>11
+<option>12
+<option>13
+<option>14
+<option>15
+<option>16
+<option>17
+<option>18
+<option>19
+<option>20
+<option>21
+<option>22
+<option>23
+<option>24
+<option>25
+<option>26
+<option>27
+<option>28
+<option>29
+<option>30
+<option>31</select>
+<select>
+<option>MONTH
+<option>January
+<option>Febrary
+<option>March
+<option>April
+<option>May
+<option>June
+<option>July
+<option>August
+<option>September
+<option>Octuber
+<option>November
+<option>December</select>
+<select>
+<option>Year
+<option>2018
+<option>2017
+<option>2016
+<option>2015
+<option>2014
+<option>2013
+<option>2012
+<option>2011
+<option>2010</select><br><BR>
+Verified By:<input type="Radio"Value="0 or 1">OTP
+:<input type="Radio"Value="0 or 1">Call<br><br>
+<a href="success.html">
+<input type="button"value="Final submit"></a>&#160&#160&#160&#160
+<a href="photo upload.html">
+<input type="Button"Value="Cancel"></a>
+</td></tr></table>
+</center></td></tr></table><br><br>
+</body></html>
